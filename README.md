@@ -28,14 +28,24 @@ An automated browser ingestion engine built with Selenium 4, Pydantic, and Panda
 ### 1. Install Dependencies
 ```bash
 py -m pip install -r requirements.txt
-2. Configure Credentials
-Update .env with your login credentials and target profile:
 
-Code snippet
+```
+
+### 2. Configure Credentials
+
+Update `.env` with your login credentials and target profile:
+
+```env
 X_USERNAME=your_username
 X_PASSWORD=your_password
-TARGET_PROFILE_URL=[https://x.com/elonmusk](https://x.com/elonmusk)
+TARGET_PROFILE_URL=https://x.com/elonmusk
 HEADLESS=false
-3. Run Pipeline
-Bash
+
+```
+
+### 3. Run Pipeline
+
+```bash
 py main.py
+
+```
